@@ -16,7 +16,8 @@ class Persona extends Thread {
     @Override
     public void run() {
         try {
-            sk = new Socket("127.0.0.1", 10578);
+            //rrrr
+        	sk = new Socket("127.0.0.1", 10578);
             dos = new DataOutputStream(sk.getOutputStream());
             dis = new DataInputStream(sk.getInputStream());
             System.out.println(id + " envía saludo");
